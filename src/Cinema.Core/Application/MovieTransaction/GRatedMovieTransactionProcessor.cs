@@ -56,6 +56,11 @@ namespace MovieTicketing.Application.MovieTransaction
                 throw new AgeGroupNotAllowedException($"Customer {customer.Name} is not allowed to watch the movie due to age ristrictions.");
             };
         }
+
+        public void CreateNewTransaction()
+        {
+           _basket=new Basket();
+        }
     }
 
 

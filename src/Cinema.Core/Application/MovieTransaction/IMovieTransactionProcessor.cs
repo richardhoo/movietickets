@@ -12,6 +12,7 @@ namespace MovieTicketing.Application.MovieTransaction
         void AddToBasket(Senior senior);
         void AddToBasket(Teenager teen);
         void ApplyDiscount(IPromotion discount);
+        void CreateNewTransaction();
     }
 
 

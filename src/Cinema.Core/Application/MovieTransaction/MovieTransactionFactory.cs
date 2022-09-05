@@ -23,6 +23,7 @@ namespace MovieTicketing.Application.MovieTransaction
             {
                 if (movieTransactionProcessor.MovieRating == rating)
                 {
+                    movieTransactionProcessor.CreateNewTransaction();
                     return movieTransactionProcessor;
                 }
             }
